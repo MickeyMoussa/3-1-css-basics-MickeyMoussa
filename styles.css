@@ -26,6 +26,40 @@
         color: #333;
         font-size: 16px
     }
+
+    p { color: #333; }                    /* Specificity: 0-0-1 */
+    .winner { color: #ff6b6b; }           /* Specificity: 0-1-0 */
+    #specificity-test { color: #4ecdc4; }  /* Specificity: 1-0-0 */
+    p.winner { color: #95a5a6; }          /* Specificity: 0-1-1 */
+
+    .important_test {
+        color: #e67e22 !important;
+    }
+
+    .chat_container .message {
+        color: #2c3e50;
+    }
+
+    .send-button:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.chat-link:hover {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+
+h4.trending-tag, h5.trending-tag, h6.trending-tag {
+    color: #8b9dc3;
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /* TODO 1: Basic Element Selectors */
 /* Style all paragraphs with color: #333 and font-size: 16px */
 
